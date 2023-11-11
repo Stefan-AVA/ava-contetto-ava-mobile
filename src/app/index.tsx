@@ -7,5 +7,5 @@ const View = styled(WebView)`
 `
 
 export default function App() {
-  return <View source={{ uri: "https://ava-brown.vercel.app" }} />
+  return <View source={{ uri: process.env.EXPO_PUBLIC_APP_URL! }} />
 }
