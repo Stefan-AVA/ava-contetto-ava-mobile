@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "ios": {
+      "supportsTablet": false
+    },
+    "name": "ava",
+    "slug": "ava",
+    "icon": "./assets/icon.png",
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    },
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "ava",
+    "version": "1.0.0",
+    "plugins": [
+      "expo-router",
+      ["expo-build-properties", {
+        "android": {
+          "minSdkVersion": 27,
+          "enableProguardInReleaseBuilds": true
+        }
+      }]
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
