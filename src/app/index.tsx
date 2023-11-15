@@ -7,5 +7,11 @@ const View = styled(WebView)`
 `
 
 export default function App() {
-  return <View source={{ uri: process.env.EXPO_PUBLIC_APP_URL! }} />
+  return (
+    <View
+      source={{
+        uri: process.env.EXPO_PUBLIC_APP_URL!,
+      }}
+    />
+  )
 }

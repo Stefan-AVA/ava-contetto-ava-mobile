@@ -1,12 +1,17 @@
 {
   "expo": {
     "ios": {
-      "supportsTablet": false
+      "supportsTablet": false,
+      "bundleIdentifier": "com.avahome.ava"
     },
     "name": "ava",
     "slug": "ava",
     "icon": "./assets/icon.png",
+    "owner": "avahome",
     "extra": {
+      "eas": {
+        "projectId": "0de1e94b-1719-4715-bc77-93c6264d8e37"
+      },
       "router": {
         "origin": false
       }
@@ -14,30 +19,40 @@
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FFF"
     },
     "scheme": "ava",
     "version": "1.0.0",
+    "updates": {
+      "url": "https://u.expo.dev/0de1e94b-1719-4715-bc77-93c6264d8e37"
+    },
     "plugins": [
       "expo-router",
-      ["expo-build-properties", {
-        "android": {
-          "minSdkVersion": 27,
-          "enableProguardInReleaseBuilds": true
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 27,
+            "enableProguardInReleaseBuilds": true
+          }
         }
-      }]
+      ]
     ],
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.avahome.ava"
     },
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
     },
     "orientation": "portrait",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "userInterfaceStyle": "light",
     "assetBundlePatterns": [
       "**/*"
