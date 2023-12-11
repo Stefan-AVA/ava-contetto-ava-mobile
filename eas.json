@@ -16,10 +16,13 @@
       "developmentClient": true
     },
     "preview": {
+      "ios": {
+        "enterpriseProvisioning": "universal"
+      },
       "android": {
         "buildType": "apk"
       },
-      "distribution": "internal"
+      "distribution": "internal",
     },
     "production": {
       "autoIncrement": true
