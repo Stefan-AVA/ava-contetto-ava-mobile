@@ -1,5 +1,11 @@
+import { useEffect } from "react"
 import { ActivityIndicator, Text, View } from "react-native"
+import { LogLevel, OneSignal } from "react-native-onesignal"
 import { WebView } from "react-native-webview"
+
+OneSignal.Debug.setLogLevel(LogLevel.Verbose)
+
+OneSignal.initialize(process.env.EXPO_PUBLIC_ONESIGNAL_APP_ID!)
 
 function Loading() {
   return (
@@ -20,6 +26,10 @@ function Loading() {
 }
 
 export default function App() {
+  useEffect(() => {
+    OneSignal.Notifications.requestPermission(true)
+  }, [])
+
   return (
     <WebView
       style={{

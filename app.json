@@ -28,15 +28,15 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-build-properties",
-        {
-          "android": {
-            "minSdkVersion": 27,
-            "enableProguardInReleaseBuilds": true
-          }
+      ["expo-build-properties", {
+        "android": {
+          "minSdkVersion": 27,
+          "enableProguardInReleaseBuilds": true
         }
-      ]
+      }],
+      ["onesignal-expo-plugin", {
+        "mode": "development"
+      }]
     ],
     "android": {
       "adaptiveIcon": {
