@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import { PermissionStatus, useForegroundPermissions } from "expo-location"
 import { ActivityIndicator, Text, View } from "react-native"
 import { LogLevel, OneSignal } from "react-native-onesignal"
 import { WebView } from "react-native-webview"
@@ -26,6 +27,16 @@ function Loading() {
 }
 
 export default function App() {
+  const [status, requestPermission] = useForegroundPermissions()
+
+  async function requestPermissionLocation() {
+    if (status) {
+      if (status.status === PermissionStatus.GRANTED) return
+
+      if (status.canAskAgain) await requestPermission()
+    }
+  }
+
   useEffect(() => {
     OneSignal.Notifications.requestPermission(true)
   }, [])
@@ -39,6 +50,7 @@ export default function App() {
       source={{
         uri: process.env.EXPO_PUBLIC_APP_URL!,
       }}
+      onLoadEnd={() => requestPermissionLocation()}
       renderLoading={() => <Loading />}
       geolocationEnabled
       startInLoadingState
