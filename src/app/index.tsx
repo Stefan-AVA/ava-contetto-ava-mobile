@@ -58,8 +58,6 @@ export default function App() {
   function onNavigate(url: string) {
     const path = getPathnameFromUrl(url)
 
-    if (path === "/") OneSignal.logout()
-
     if (!hasInjectedJavascript && path.includes("/app")) {
       const INJECTED_JAVASCRIPT = `(function() {
         const tokenLocalStorage = window.localStorage.getItem('@ava-token');
