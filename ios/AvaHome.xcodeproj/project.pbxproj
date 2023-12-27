@@ -7,37 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08FE32D948994069A9FD0F20 /* OneSignalNotificationServiceExtension.appex in Copy Files */ = {isa = PBXBuildFile; fileRef = FD8D9808512D4946BB125E94 /* OneSignalNotificationServiceExtension.appex */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19F03F2C07C248DE9B85C94F /* OneSignalNotificationServiceExtension.appex in Copy Files */ = {isa = PBXBuildFile; fileRef = E3E46B847DB248959A11B607 /* OneSignalNotificationServiceExtension.appex */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		81DE884ABFA8478DBBE47CE2 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A526BE5E8BC4AD689B9596F /* NotificationService.m */; };
+		6AB200B6CD7756EC785D4D11 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C3BAD1EA62A63D8C1C51E6 /* libPods-OneSignalNotificationServiceExtension.a */; };
 		96905EF65AED1B983A6B3ABC /* libPods-AvaHome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-AvaHome.a */; };
-		A38D968392A02003E291972B /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A43426E4BD909E45145F526 /* libPods-OneSignalNotificationServiceExtension.a */; };
+		980CD3FB4E2641209C1E0768 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FAE02512614B6EA65EF13E /* NotificationService.m */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
-		B2118C61EDB34DDD9F07585A /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88B9B85330A492B934AC0AD /* noop-file.swift */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		E69EAEF7F1574132BD8DDB06 /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4017150D3B3B48BE9D054432 /* noop-file.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		89FB1FA586A8448799FE3594 /* PBXContainerItemProxy */ = {
+		B7AE9D9C591D409EAB2A84A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 17623513BFFC4AD398C9F959;
+			remoteGlobalIDString = 76B7469910274CEF82193CCB;
 			remoteInfo = OneSignalNotificationServiceExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A0DED50966D345979A22AE57 /* Copy Files */ = {
+		A48264A8E46C4B7E894DAE07 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				08FE32D948994069A9FD0F20 /* OneSignalNotificationServiceExtension.appex in Copy Files */,
+				19F03F2C07C248DE9B85C94F /* OneSignalNotificationServiceExtension.appex in Copy Files */,
 			);
 			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,29 +45,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0DD40641B387751D26BEB741 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* AvaHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvaHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AvaHome/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = AvaHome/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AvaHome/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AvaHome/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AvaHome/main.m; sourceTree = "<group>"; };
-		1A43426E4BD909E45145F526 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		30E0DB1342F24E4E82CEB026 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OneSignalNotificationServiceExtension.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
-		5577BCD10AFC4FC398219BC4 /* OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "OneSignalNotificationServiceExtension-Info.plist"; path = "OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
+		302552C8A35E4FC99369BA78 /* OneSignalNotificationServiceExtension.entitlements */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = OneSignalNotificationServiceExtension.entitlements; path = OneSignalNotificationServiceExtension.entitlements; sourceTree = "<group>"; };
+		4017150D3B3B48BE9D054432 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "AvaHome/noop-file.swift"; sourceTree = "<group>"; };
+		45FAE02512614B6EA65EF13E /* NotificationService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NotificationService.m; path = NotificationService.m; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-AvaHome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AvaHome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		669AF9CBD4934BA6A35E418E /* NotificationService.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NotificationService.h; path = NotificationService.h; sourceTree = "<group>"; };
+		6B33ED665CD74F70AA7E368E /* AvaHome-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AvaHome-Bridging-Header.h"; path = "AvaHome/AvaHome-Bridging-Header.h"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-AvaHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvaHome.debug.xcconfig"; path = "Target Support Files/Pods-AvaHome/Pods-AvaHome.debug.xcconfig"; sourceTree = "<group>"; };
+		74C3BAD1EA62A63D8C1C51E6 /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A4D352CD337FB3A3BF06240 /* Pods-AvaHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AvaHome.release.xcconfig"; path = "Target Support Files/Pods-AvaHome/Pods-AvaHome.release.xcconfig"; sourceTree = "<group>"; };
-		984D624A159330C1244C1B97 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
-		9A526BE5E8BC4AD689B9596F /* NotificationService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NotificationService.m; path = NotificationService.m; sourceTree = "<group>"; };
-		A0A3759DBF984100B86D89E8 /* AvaHome-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "AvaHome-Bridging-Header.h"; path = "AvaHome/AvaHome-Bridging-Header.h"; sourceTree = "<group>"; };
+		8DA6B9F2D44B6566CD77C742 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		90D353A2586745DF86439114 /* OneSignalNotificationServiceExtension-Info.plist */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.plist.xml; name = "OneSignalNotificationServiceExtension-Info.plist"; path = "OneSignalNotificationServiceExtension-Info.plist"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = AvaHome/SplashScreen.storyboard; sourceTree = "<group>"; };
+		AD4213C833CE32B4D40FBF23 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C88B9B85330A492B934AC0AD /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "AvaHome/noop-file.swift"; sourceTree = "<group>"; };
-		DF2A358CAA5A4552BF9FFC95 /* NotificationService.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NotificationService.h; path = NotificationService.h; sourceTree = "<group>"; };
+		E3E46B847DB248959A11B607 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = undefined; name = OneSignalNotificationServiceExtension.appex; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-AvaHome/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		FD8D9808512D4946BB125E94 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = undefined; name = OneSignalNotificationServiceExtension.appex; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +79,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2A9BBDD1A5FB4390B4E631D0 /* Frameworks */ = {
+		F289A3E0236A451F9383EF19 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A38D968392A02003E291972B /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
+				6AB200B6CD7756EC785D4D11 /* libPods-OneSignalNotificationServiceExtension.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				C88B9B85330A492B934AC0AD /* noop-file.swift */,
-				A0A3759DBF984100B86D89E8 /* AvaHome-Bridging-Header.h */,
+				4017150D3B3B48BE9D054432 /* noop-file.swift */,
+				6B33ED665CD74F70AA7E368E /* AvaHome-Bridging-Header.h */,
 			);
 			name = AvaHome;
 			sourceTree = "<group>";
@@ -111,18 +111,18 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-AvaHome.a */,
-				1A43426E4BD909E45145F526 /* libPods-OneSignalNotificationServiceExtension.a */,
+				74C3BAD1EA62A63D8C1C51E6 /* libPods-OneSignalNotificationServiceExtension.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		40F36CD44E9944E99B1A5E34 /* OneSignalNotificationServiceExtension */ = {
+		527CE1F8AE0149DF930060A7 /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXGroup;
 			children = (
-				DF2A358CAA5A4552BF9FFC95 /* NotificationService.h */,
-				30E0DB1342F24E4E82CEB026 /* OneSignalNotificationServiceExtension.entitlements */,
-				5577BCD10AFC4FC398219BC4 /* OneSignalNotificationServiceExtension-Info.plist */,
-				9A526BE5E8BC4AD689B9596F /* NotificationService.m */,
+				669AF9CBD4934BA6A35E418E /* NotificationService.h */,
+				302552C8A35E4FC99369BA78 /* OneSignalNotificationServiceExtension.entitlements */,
+				90D353A2586745DF86439114 /* OneSignalNotificationServiceExtension-Info.plist */,
+				45FAE02512614B6EA65EF13E /* NotificationService.m */,
 			);
 			name = OneSignalNotificationServiceExtension;
 			path = OneSignalNotificationServiceExtension;
@@ -144,7 +144,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
-				40F36CD44E9944E99B1A5E34 /* OneSignalNotificationServiceExtension */,
+				527CE1F8AE0149DF930060A7 /* OneSignalNotificationServiceExtension */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* AvaHome.app */,
-				FD8D9808512D4946BB125E94 /* OneSignalNotificationServiceExtension.appex */,
+				E3E46B847DB248959A11B607 /* OneSignalNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,9 +182,9 @@
 			children = (
 				6C2E3173556A471DD304B334 /* Pods-AvaHome.debug.xcconfig */,
 				7A4D352CD337FB3A3BF06240 /* Pods-AvaHome.release.xcconfig */,
-				40F36CD44E9944E99B1A5E34 /* OneSignalNotificationServiceExtension */,
-				0DD40641B387751D26BEB741 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
-				984D624A159330C1244C1B97 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+				527CE1F8AE0149DF930060A7 /* OneSignalNotificationServiceExtension */,
+				AD4213C833CE32B4D40FBF23 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				8DA6B9F2D44B6566CD77C742 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -206,33 +206,33 @@
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
-				2E2C8037A061A7F19B794A4E /* [Expo] Configure project */,
+				F658C2E3419FE7B8F8ABBCE4 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				A0DED50966D345979A22AE57 /* Copy Files */,
-				57ECC32E8747D52B018F450D /* [CP] Embed Pods Frameworks */,
+				A48264A8E46C4B7E894DAE07 /* Copy Files */,
+				BC4211EF2C1A371CD9D15A43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6796602B2AD245C5BB8DAD8A /* PBXTargetDependency */,
+				2F4216761A574316BC821225 /* PBXTargetDependency */,
 			);
 			name = AvaHome;
 			productName = AvaHome;
 			productReference = 13B07F961A680F5B00A75B9A /* AvaHome.app */;
 			productType = "com.apple.product-type.application";
 		};
-		17623513BFFC4AD398C9F959 /* OneSignalNotificationServiceExtension */ = {
+		76B7469910274CEF82193CCB /* OneSignalNotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA357DAF26AA4D23B58644AE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildConfigurationList = 005C90B605E340B69AFD6E83 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
 			buildPhases = (
-				9F27D7D0F8846E0004697E55 /* [CP] Check Pods Manifest.lock */,
-				FF93AB36EB984756B4F9308E /* Sources */,
-				549CC44DB984416FB61347EE /* Resources */,
-				2A9BBDD1A5FB4390B4E631D0 /* Frameworks */,
+				BAA4CA827045333FB60697D9 /* [CP] Check Pods Manifest.lock */,
+				5022C977F98740BCBE279E80 /* Sources */,
+				E8F6EFB2705A4796968800CB /* Resources */,
+				F289A3E0236A451F9383EF19 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -240,7 +240,7 @@
 			);
 			name = OneSignalNotificationServiceExtension;
 			productName = OneSignalNotificationServiceExtension;
-			productReference = FD8D9808512D4946BB125E94 /* OneSignalNotificationServiceExtension.appex */;
+			productReference = E3E46B847DB248959A11B607 /* OneSignalNotificationServiceExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -255,7 +255,7 @@
 						DevelopmentTeam = undefined;
 						LastSwiftMigration = 1250;
 					};
-					17623513BFFC4AD398C9F959 = {
+					76B7469910274CEF82193CCB = {
 						DevelopmentTeam = undefined;
 					};
 				};
@@ -274,7 +274,7 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* AvaHome */,
-				17623513BFFC4AD398C9F959 /* OneSignalNotificationServiceExtension */,
+				76B7469910274CEF82193CCB /* OneSignalNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -290,7 +290,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		549CC44DB984416FB61347EE /* Resources */ = {
+		E8F6EFB2705A4796968800CB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -336,26 +336,49 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2E2C8037A061A7F19B794A4E /* [Expo] Configure project */ = {
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AvaHome/Pods-AvaHome-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AvaHome/Pods-AvaHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA4CA827045333FB60697D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[Expo] Configure project";
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-AvaHome/expo-configure-project.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-		57ECC32E8747D52B018F450D /* [CP] Embed Pods Frameworks */ = {
+		BC4211EF2C1A371CD9D15A43 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -391,49 +414,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AvaHome/Pods-AvaHome-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+		F658C2E3419FE7B8F8ABBCE4 /* [Expo] Configure project */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AvaHome/Pods-AvaHome-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/EXUpdates/EXUpdates.bundle",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXUpdates.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AvaHome/Pods-AvaHome-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9F27D7D0F8846E0004697E55 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[Expo] Configure project";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-AvaHome/expo-configure-project.sh\"\n";
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -464,25 +462,25 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
-				B2118C61EDB34DDD9F07585A /* noop-file.swift in Sources */,
+				E69EAEF7F1574132BD8DDB06 /* noop-file.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF93AB36EB984756B4F9308E /* Sources */ = {
+		5022C977F98740BCBE279E80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81DE884ABFA8478DBBE47CE2 /* NotificationService.m in Sources */,
+				980CD3FB4E2641209C1E0768 /* NotificationService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6796602B2AD245C5BB8DAD8A /* PBXTargetDependency */ = {
+		2F4216761A574316BC821225 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 17623513BFFC4AD398C9F959 /* OneSignalNotificationServiceExtension */;
-			targetProxy = 89FB1FA586A8448799FE3594 /* PBXContainerItemProxy */;
+			target = 76B7469910274CEF82193CCB /* OneSignalNotificationServiceExtension */;
+			targetProxy = B7AE9D9C591D409EAB2A84A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -511,11 +509,11 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avahome.ava;
-				PRODUCT_NAME = "AvaHome";
+				PRODUCT_NAME = AvaHome;
 				SWIFT_OBJC_BRIDGING_HEADER = "AvaHome/AvaHome-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -539,11 +537,29 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.avahome.ava;
-				PRODUCT_NAME = "AvaHome";
+				PRODUCT_NAME = AvaHome;
 				SWIFT_OBJC_BRIDGING_HEADER = "AvaHome/AvaHome-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		7BF4D71307BD48E4B483265C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA6B9F2D44B6566CD77C742 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = undefined;
+				INFOPLIST_FILE = "OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.avahome.ava.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = OneSignalNotificationServiceExtension;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -675,27 +691,9 @@
 			};
 			name = Release;
 		};
-		A311EF42975347859C6F3665 /* Release */ = {
+		899346A4A305467D934FD8F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 984D624A159330C1244C1B97 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = undefined;
-				INFOPLIST_FILE = "OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.avahome.ava.OneSignalNotificationServiceExtension;
-				PRODUCT_NAME = OneSignalNotificationServiceExtension;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1";
-			};
-			name = Release;
-		};
-		DC99E97E63C34520BF175F38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD40641B387751D26BEB741 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			baseConfigurationReference = AD4213C833CE32B4D40FBF23 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = OneSignalNotificationServiceExtension/OneSignalNotificationServiceExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -711,13 +709,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.avahome.ava.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = OneSignalNotificationServiceExtension;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		005C90B605E340B69AFD6E83 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				899346A4A305467D934FD8F1 /* Debug */,
+				7BF4D71307BD48E4B483265C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AvaHome" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -732,15 +739,6 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AA357DAF26AA4D23B58644AE /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DC99E97E63C34520BF175F38 /* Debug */,
-				A311EF42975347859C6F3665 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

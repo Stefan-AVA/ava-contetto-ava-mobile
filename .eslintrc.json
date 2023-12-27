@@ -6,6 +6,7 @@
   "extends": [
     "universe",
     "plugin:prettier/recommended",
+    "plugin:react-hooks/recommended",
     "universe/shared/typescript-analysis"
   ],
   "plugins": [
