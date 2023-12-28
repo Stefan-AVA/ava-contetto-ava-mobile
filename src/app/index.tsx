@@ -1,5 +1,4 @@
-import { useEffect, useRef, useState } from "react"
-import api from "@/services/api"
+import { useEffect, useRef } from "react"
 import { PermissionStatus, useForegroundPermissions } from "expo-location"
 import { LogLevel, OneSignal } from "react-native-onesignal"
 import { WebView, type WebViewMessageEvent } from "react-native-webview"
@@ -11,33 +10,34 @@ OneSignal.Debug.setLogLevel(LogLevel.Verbose)
 
 OneSignal.initialize(process.env.EXPO_PUBLIC_ONESIGNAL_APP_ID!)
 
-export default function App() {
-  const [hasInjectedJavascript, setHasInjectedJavascript] = useState(false)
+type NativeEventResponse = {
+  type: "ONESIGNAL_LOGIN"
+  user: User
+}
 
+export default function App() {
   const ref = useRef<WebView>(null)
 
   const [status, requestPermission] = useForegroundPermissions()
 
   async function onMessage({ nativeEvent }: WebViewMessageEvent) {
     if (nativeEvent.data) {
-      const token = nativeEvent.data
+      const data = nativeEvent.data
 
-      await api
-        .get<User>("/auth/me", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        })
-        .then(({ data }) => {
-          OneSignal.login(data.username)
+      if (data) {
+        const { type, user } = JSON.parse(data) as NativeEventResponse
 
-          if (data.emails && data.emails.length > 0) {
-            const findPrimaryEmail = data.emails.find((email) => email.primary)
+        if (type === "ONESIGNAL_LOGIN") {
+          OneSignal.login(user.username)
+
+          if (user.emails && user.emails.length > 0) {
+            const findPrimaryEmail = user.emails.find((email) => email.primary)
 
             if (findPrimaryEmail)
               OneSignal.User.addEmail(findPrimaryEmail.email)
           }
-        })
+        }
+      }
     }
   }
 
@@ -46,28 +46,6 @@ export default function App() {
       if (status.status === PermissionStatus.GRANTED) return
 
       if (status.canAskAgain) await requestPermission()
-    }
-  }
-
-  function getPathnameFromUrl(url: string) {
-    const path = url.replace(/^.*\/\/[^/]+/, "")
-
-    return path
-  }
-
-  function onNavigate(url: string) {
-    const path = getPathnameFromUrl(url)
-
-    if (!hasInjectedJavascript && path.includes("/app")) {
-      const INJECTED_JAVASCRIPT = `(function() {
-        const tokenLocalStorage = window.localStorage.getItem('@ava-token');
-
-        window.ReactNativeWebView.postMessage(tokenLocalStorage);
-      })();`
-
-      ref.current?.injectJavaScript(INJECTED_JAVASCRIPT)
-
-      setHasInjectedJavascript(true)
     }
   }
 
@@ -91,7 +69,6 @@ export default function App() {
       originWhitelist={["*"]}
       geolocationEnabled
       startInLoadingState
-      onNavigationStateChange={({ url }) => onNavigate(url)}
     />
   )
 }
