@@ -1,10 +1,13 @@
 {
   "expo": {
     "ios": {
+      "infoPlist": {
+        "OneSignal_suppress_launch_urls": true
+      },
       "supportsTablet": false,
       "bundleIdentifier": "com.avahome.ava"
     },
-    "name": "Ava Home",
+    "name": "Contetto",
     "slug": "ava",
     "icon": "./assets/icon.png",
     "owner": "avahome",
@@ -21,32 +24,47 @@
       "resizeMode": "contain",
       "backgroundColor": "#FFF"
     },
-    "scheme": "ava",
+    "scheme": "contetto",
     "version": "1.0.0",
     "updates": {
       "url": "https://u.expo.dev/0de1e94b-1719-4715-bc77-93c6264d8e37"
     },
     "plugins": [
       "expo-router",
-      ["expo-location", {
-        "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
-      }],
-      ["expo-build-properties", {
-        "android": {
-          "minSdkVersion": 27,
-          "enableProguardInReleaseBuilds": true
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
         }
-      }],
-      ["onesignal-expo-plugin", {
-        "mode": "development"
-      }]
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "minSdkVersion": 27,
+            "enableProguardInReleaseBuilds": true
+          }
+        }
+      ],
+      [
+        "onesignal-expo-plugin",
+        {
+          "mode": "development"
+        }
+      ],
+      [
+        "./plugins/withAndroidMainActivityAttributes",
+        {
+          "android:com.onesignal.suppressLaunchURLs": true
+        }
+      ]
     ],
     "android": {
+      "package": "com.avahome.ava",
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.avahome.ava"
+        "backgroundColor": "#FFF"
+      }
     },
     "experiments": {
       "typedRoutes": true,

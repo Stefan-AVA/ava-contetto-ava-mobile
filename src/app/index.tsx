@@ -1,6 +1,11 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
+import Constants from "expo-constants"
 import { PermissionStatus, useForegroundPermissions } from "expo-location"
-import { LogLevel, OneSignal } from "react-native-onesignal"
+import {
+  LogLevel,
+  OneSignal,
+  type NotificationClickEvent,
+} from "react-native-onesignal"
 import { WebView, type WebViewMessageEvent } from "react-native-webview"
 
 import type { User } from "@/types/user"
@@ -16,6 +21,10 @@ type NativeEventResponse = {
 }
 
 export default function App() {
+  const baseURL = process.env.EXPO_PUBLIC_APP_URL!
+
+  const [uri, setUri] = useState(baseURL)
+
   const ref = useRef<WebView>(null)
 
   const [status, requestPermission] = useForegroundPermissions()
@@ -53,6 +62,35 @@ export default function App() {
     OneSignal.Notifications.requestPermission(true)
   }, [])
 
+  useEffect(() => {
+    function onHandleNotificationClicked({
+      notification,
+    }: NotificationClickEvent) {
+      if (notification.launchURL) {
+        const scheme = Constants.expoConfig?.scheme as string
+
+        const formatUri = notification.launchURL.replace(
+          `${scheme}://`,
+          `${baseURL}/`
+        )
+
+        setUri(formatUri)
+      }
+    }
+
+    OneSignal.Notifications.addEventListener(
+      "click",
+      onHandleNotificationClicked
+    )
+
+    return () => {
+      OneSignal.Notifications.removeEventListener(
+        "click",
+        onHandleNotificationClicked
+      )
+    }
+  }, [baseURL])
+
   return (
     <WebView
       ref={ref}
@@ -61,7 +99,7 @@ export default function App() {
         marginTop: 60,
       }}
       source={{
-        uri: process.env.EXPO_PUBLIC_APP_URL!,
+        uri,
       }}
       onLoadEnd={() => requestPermissionLocation()}
       onMessage={onMessage}

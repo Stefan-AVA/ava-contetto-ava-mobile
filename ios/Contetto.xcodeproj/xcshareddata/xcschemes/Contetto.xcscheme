@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "AvaHome.app"
-               BlueprintName = "AvaHome"
-               ReferencedContainer = "container:AvaHome.xcodeproj">
+               BuildableName = "Contetto.app"
+               BlueprintName = "Contetto"
+               ReferencedContainer = "container:Contetto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "AvaHomeTests.xctest"
-               BlueprintName = "AvaHomeTests"
-               ReferencedContainer = "container:AvaHome.xcodeproj">
+               BuildableName = "ContettoTests.xctest"
+               BlueprintName = "ContettoTests"
+               ReferencedContainer = "container:Contetto.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AvaHome.app"
-            BlueprintName = "AvaHome"
-            ReferencedContainer = "container:AvaHome.xcodeproj">
+            BuildableName = "Contetto.app"
+            BlueprintName = "Contetto"
+            ReferencedContainer = "container:Contetto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AvaHome.app"
-            BlueprintName = "AvaHome"
-            ReferencedContainer = "container:AvaHome.xcodeproj">
+            BuildableName = "Contetto.app"
+            BlueprintName = "Contetto"
+            ReferencedContainer = "container:Contetto.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
