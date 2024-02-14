@@ -20,6 +20,7 @@
         "enterpriseProvisioning": "universal"
       },
       "android": {
+        "image": "default",
         "buildType": "apk"
       },
       "distribution": "internal"

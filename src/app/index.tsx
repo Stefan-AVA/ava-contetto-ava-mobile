@@ -66,13 +66,17 @@ export default function App() {
     function onHandleNotificationClicked({
       notification,
     }: NotificationClickEvent) {
-      if (notification.launchURL) {
+      /**
+       * @tmp
+       * In case of wrongly typed launchURL https://github.com/OneSignal/react-native-onesignal/issues/1635
+       */
+      // @ts-expect-error
+      const notificationUrl = notification.launchURL ?? notification.launchUrl
+
+      if (notificationUrl) {
         const scheme = Constants.expoConfig?.scheme as string
 
-        const formatUri = notification.launchURL.replace(
-          `${scheme}://`,
-          `${baseURL}/`
-        )
+        const formatUri = notificationUrl.replace(`${scheme}://`, `${baseURL}/`)
 
         setUri(formatUri)
       }

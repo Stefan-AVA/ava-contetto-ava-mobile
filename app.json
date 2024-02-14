@@ -41,7 +41,7 @@
         "expo-build-properties",
         {
           "android": {
-            "minSdkVersion": 27,
+            "newArchEnabled": true,
             "enableProguardInReleaseBuilds": true
           }
         }
@@ -68,6 +68,7 @@
     },
     "experiments": {
       "typedRoutes": true,
+      "turboModules": true,
       "tsconfigPaths": true
     },
     "orientation": "portrait",
