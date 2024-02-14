@@ -6925,10 +6925,10 @@ react-native-gesture-handler@~2.14.0:
     lodash "^4.17.21"
     prop-types "^15.7.2"
 
-react-native-onesignal@^5.0.5:
-  version "5.0.5"
-  resolved "https://registry.yarnpkg.com/react-native-onesignal/-/react-native-onesignal-5.0.5.tgz#4ef9c958dd239360b17b196a3a34d13e3d47d4b3"
-  integrity sha512-M+i45FTW+F88mNYVvIv1nlf2c4OxQcHozjsmcbPUP+zvQyvMGjvkEDXl7SuCjD2FlebEnl1BIZm2cphEaVJTmQ==
+react-native-onesignal@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/react-native-onesignal/-/react-native-onesignal-5.0.6.tgz#f51ef9f4dd3a840c2b71ada6447fdf1ddf6025d0"
+  integrity sha512-P6HVBY3Hu2p2wzKYSCOwUH1ESxEDKpx7wFvTnWCAyMqOc9y1JstASVvoFqDwwuvLBNFmuFkSVXQ7VdsqzTRcQg==
   dependencies:
     invariant "^2.2.2"
 

@@ -76,7 +76,10 @@ export default function App() {
       if (notificationUrl) {
         const scheme = Constants.expoConfig?.scheme as string
 
-        const formatUri = notificationUrl.replace(`${scheme}://`, `${baseURL}/`)
+        const formatUri = notificationUrl.replace(
+          `${scheme}:///?navigateTo=`,
+          `${baseURL}/`
+        )
 
         setUri(formatUri)
       }
