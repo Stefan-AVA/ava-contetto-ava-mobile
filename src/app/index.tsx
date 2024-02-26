@@ -6,6 +6,7 @@ import {
   OneSignal,
   type NotificationClickEvent,
 } from "react-native-onesignal"
+import { useSafeAreaInsets } from "react-native-safe-area-context"
 import { WebView, type WebViewMessageEvent } from "react-native-webview"
 
 import type { User } from "@/types/user"
@@ -24,6 +25,8 @@ export default function App() {
   const baseURL = process.env.EXPO_PUBLIC_APP_URL!
 
   const [uri, setUri] = useState(baseURL)
+
+  const { top } = useSafeAreaInsets()
 
   const ref = useRef<WebView>(null)
 
@@ -103,7 +106,7 @@ export default function App() {
       ref={ref}
       style={{
         flex: 1,
-        marginTop: 60,
+        marginTop: top,
       }}
       source={{
         uri,

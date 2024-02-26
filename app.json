@@ -4,7 +4,7 @@
       "infoPlist": {
         "OneSignal_suppress_launch_urls": true
       },
-      "supportsTablet": false,
+      "supportsTablet": true,
       "bundleIdentifier": "com.avahome.ava"
     },
     "name": "Contetto",

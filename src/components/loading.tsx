@@ -1,3 +1,5 @@
+import Logo from "~/assets/logo.png"
+import { Image } from "expo-image"
 import { ActivityIndicator, Text, View } from "react-native"
 
 export default function Loading() {
@@ -7,10 +9,15 @@ export default function Loading() {
         gap: 16,
         flex: 1,
         alignItems: "center",
-        justifyContent: "center",
         backgroundColor: "#FFF",
       }}
     >
+      <Image
+        style={{ width: "100%", height: 24, marginBottom: 32 }}
+        source={Logo}
+        contentFit="contain"
+      />
+
       <ActivityIndicator size={24} />
 
       <Text style={{ color: "#5D5D5D" }}>Loading ...</Text>
