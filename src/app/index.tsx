@@ -1,4 +1,8 @@
 import { useEffect, useRef, useState } from "react"
+import {
+  PermissionStatus as CameraPermissionStatus,
+  useCameraPermissions,
+} from "expo-camera/next"
 import Constants from "expo-constants"
 import { PermissionStatus, useForegroundPermissions } from "expo-location"
 import {
@@ -31,6 +35,7 @@ export default function App() {
   const ref = useRef<WebView>(null)
 
   const [status, requestPermission] = useForegroundPermissions()
+  const [permission, requestCameraPermission] = useCameraPermissions()
 
   async function onMessage({ nativeEvent }: WebViewMessageEvent) {
     if (nativeEvent.data) {
@@ -58,6 +63,14 @@ export default function App() {
       if (status.status === PermissionStatus.GRANTED) return
 
       if (status.canAskAgain) await requestPermission()
+    }
+  }
+
+  async function requestPermissionCamera() {
+    if (permission) {
+      if (permission.status === CameraPermissionStatus.GRANTED) return
+
+      if (permission.canAskAgain) await requestCameraPermission()
     }
   }
 
@@ -112,11 +125,17 @@ export default function App() {
         uri,
       }}
       onLoadEnd={() => requestPermissionLocation()}
+      onNavigationStateChange={async ({ url }) => {
+        const isContactScreen = url.endsWith("/contacts")
+
+        if (isContactScreen) await requestPermissionCamera()
+      }}
       onMessage={onMessage}
       renderLoading={() => <Loading />}
       originWhitelist={["*"]}
       geolocationEnabled
       startInLoadingState
+      mediaCapturePermissionGrantType="grant"
     />
   )
 }
